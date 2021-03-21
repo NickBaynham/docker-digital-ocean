@@ -1,4 +1,11 @@
 terraform {
+  backend "remote" {
+    organization = "nickbaynham"
+
+    workspaces {
+      name = "docker-digital-ocean"
+    }
+  }
   required_providers {
     digitalocean = {
       source  = "digitalocean/digitalocean"
