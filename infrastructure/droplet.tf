@@ -1,4 +1,4 @@
-resource "digitalocean_droplet" ubuntu_1 {
+resource "digitalocean_droplet" "ubuntu_1" {
   image = var.image_name
   name = var.droplet_name
   region = var.do_region
